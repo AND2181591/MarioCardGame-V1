@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    background-color: #000;
+  }
+  
+  #titleContainer {
+    border: solid 0px red;
+    width: 50%;
+    margin: auto;
+    background-color: #ffe400;
+    padding: 20px;
+  }
+  #title1 {
+    font-family: '8BITWONDERNominal';
+    font-weight: normal;
+    font-style: normal;
+    color: #1f57b8;
+    text-align: center;
+    text-shadow: 1px 2px 0px #ff0000;
+  }
+  #title2 {
+    font-family: '8BITWONDERNominal';
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    color: #ff0000;
+    text-shadow: 1px 2px 0px #000;
+  }
+  
+  .gameContainer {
+    border: solid 1px black;
+    background: repeating-linear-gradient(
+      -45deg,
+      #fff,
+      #fff 10px,
+      #b30000 10px,
+      #b30000 20px
+    );
+    width: 640px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game {
+    background-color: #000;
+    width: 90%;
+    height: 90%;
+  }
+  .row {
+    border: solid 0px red;
+    width: 100%;
+    height: 33.333%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    perspective: 1000px;
+  }
+  .selector, .selectorActive {
+    box-sizing: content-box;
+    border: solid 8px black;
+    border-radius: 6px;
+    position: relative;
+    width: 15%;
+    height: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .selectorActive {
+    border: solid 8px orange;
+  }
+  
+  .card {
+    border: solid 0px aqua;
+    position: absolute;
+    display: flex;
+    width: 90%;
+    height: 89%;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+  }
+  
+  .card.flip {
+    transform: rotateY(180deg);
+  }
+  
+  .frontSide, .backSide{
+    border: solid 0px deeppink;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 24px 9px;
+    background-color: #ffd1d1;
+    backface-visibility: hidden;
+  }
+  .frontSide {
+    transform: rotateY(180deg);
+  }
+  
+  .imageWithNum {
+    border: solid 0px deeppink;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 29px 14px 0px;
+    background-color: #ffd1d1;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+  }
+  
+  .backSide {
+    background-color: #fff;
+  }
+  
+  .cardSelector {
+    border: solid 8px #ff7b00;
+  }
+  
+  
+  
+  
+  
+  
